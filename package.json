@@ -3,9 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "adaptivecards": "1.0.0",
+    "axios": "^0.18.0",
+    "botframework-webchat": "^4.2.1-master.546fee4",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-scripts": "2.1.3"
+    "react-scripts": "2.1.3",
+    "react-scroll-into-view": "^1.5.0",
+    "express": "*"
   },
   "scripts": {
     "start": "react-scripts start",
