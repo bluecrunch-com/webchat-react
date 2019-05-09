@@ -18,7 +18,7 @@ class Chat extends React.Component {
         key = key ? key : 'Kh7JUsm2nkY.cwA.ZNE.IOETJ3teRbqAjAf-x-Hlpu4V5dVQ8ux_B7dlZcSeXsY';
         axios.post('https://directline.botframework.com/v3/directline/tokens/generate', {}, {
             headers: {
-                'Authorization': `Bearer ${key}`,
+                'Authorization': `Bearer 4restvZ4axM.pxm5jj0XwRB5McxT-voYKmES4M_aZoCzM3d9SZa-y8k`,
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             }
