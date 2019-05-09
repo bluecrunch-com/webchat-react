@@ -3,7 +3,6 @@ import {DirectLine} from 'botframework-directlinejs';
 import React from 'react';
 import ReactWebChat from 'botframework-webchat';
 import {createCognitiveServicesBingSpeechPonyfillFactory} from 'botframework-webchat';
-import ScrollIntoView from 'react-scroll-into-view';
 
 class Chat extends React.Component {
     constructor(props) {
@@ -46,11 +45,11 @@ class Chat extends React.Component {
         }
         return (
             <div>
-                <ScrollIntoView selector="#footer" smooth={true} >
-                    <ReactWebChat directLine={ this.state.directLine } 
+                <ReactWebChat directLine={ this.state.directLine } 
                         webSpeechPonyfillFactory={this.state.webSpeechPonyfillFactory} 
-                        locale={locale}  />
-                </ScrollIntoView>
+                        locale={locale}   scrollscrollToBottom={() => {
+                            this.messagesEnd.scrollIntoView({ behavior: "smooth" });
+                          }}/>
                 <div id="footer"></div>
             </div>
         );
